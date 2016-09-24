@@ -7,6 +7,6 @@ import TicketDisplay from './components/TicketDisplay';
 
 export default (
   <Router history={browserHistory}>
-    <Route path="/" component={TicketDisplay} />
+    <Route path="/" component={MainLayoutContainer} />
   </Router>
 );

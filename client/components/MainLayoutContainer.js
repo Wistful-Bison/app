@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import store from '../store';
 
 import TicketDisplay from './TicketDisplay';
+import Search from './Search';
+import CreateTicket from './CreateTicket';
 
 class MainLayoutContainer extends React.Component {
   constructor (props) {
@@ -14,7 +16,10 @@ class MainLayoutContainer extends React.Component {
   render () {
     return (
       <div>
+        Ticket Home
         <TicketDisplay />
+        <Search />
+        <CreateTicket />
       </div>
     )
   }
