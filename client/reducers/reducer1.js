@@ -2,7 +2,10 @@ import * as types from '../actions/action-types';
 import _ from 'lodash';
 
 const initialState = {
-  tickets: []
+  tickets: [],
+  filteredTickets: [],
+  searchText: '',
+  createTicketToggled: false
 };
 
 // in my mind, this is kind of like middleware, where

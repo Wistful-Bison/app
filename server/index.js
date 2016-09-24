@@ -11,3 +11,4 @@ console.log(text.art);
 //set server to listen to port
 require('./server.js').listen(port, () => 
   console.log(chalk.green.bold(`Athena App RESTful API listening on port ${port}.`)));
+ console.log(__dirname);

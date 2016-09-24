@@ -1,7 +1,8 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import store from '../store';
-import { loadTicketState } from '../actions/ticket-actions';
+
+import Tickets from './Tickets';
 
 class TicketDisplay extends React.Component {
   constructor (props) {
@@ -9,15 +10,12 @@ class TicketDisplay extends React.Component {
 
   };
 
-  componentDidMount() {
-    console.log(loadTicketState);
-    //returns an action to the store
-    store.dispatch(loadTicketState(['ticket1', 'ticket2', 'ticket3']));
-  }
-
   render () {
     return (
-      <div>{JSON.stringify(this.props.tickets)}</div>
+      <div id='ticketWindow'>
+      Ticket Window!
+        <Tickets />
+      </div>
     )
   };
 }
